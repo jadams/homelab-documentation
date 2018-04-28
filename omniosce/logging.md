@@ -1,3 +1,4 @@
+### run
 ```
 touch /var/adm/authlog
 chmod 600 /var/adm/authlog
