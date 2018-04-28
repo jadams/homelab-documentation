@@ -1,4 +1,4 @@
-# Documentation for my homelab
+# Documentation for adams.network
 
 ## [OmniOSCE](https://github.com/jadams/homelab-documentation/tree/master/omniosce)
 * [Hardware](https://github.com/jadams/homelab-documentation/blob/master/omniosce/hardware.md)
