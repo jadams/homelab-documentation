@@ -1,0 +1,97 @@
+{
+   "confluence" : {
+      "scheduling-class" : "",
+      "resolvers" : [
+         "10.10.5.3"
+      ],
+      "zonename" : "confluence",
+      "brand" : "lx",
+      "ip-type" : "exclusive",
+      "pool" : "",
+      "autoboot" : "false",
+      "fs-allowed" : "",
+      "kernel-version" : "4.3.0",
+      "bootargs" : "",
+      "dns-domain" : "adams.network",
+      "zonepath" : "/rpool/zones/confluence",
+      "limitpriv" : "default",
+      "net" : [
+         {
+            "ips" : [
+               "10.10.5.15/24"
+            ],
+            "physical" : "vnic3",
+            "gateway" : "10.10.5.1",
+            "over" : "igb0",
+            "primary" : "true"
+         }
+      ],
+      "hostid" : ""
+   },
+   "plex" : {
+      "ip-type" : "exclusive",
+      "pool" : "",
+      "autoboot" : "false",
+      "kernel-version" : "4.3.0",
+      "fs-allowed" : "",
+      "bootargs" : "",
+      "dns-domain" : "adams.network",
+      "zonepath" : "/rpool/zones/plex",
+      "fs" : [
+         {
+            "type" : "lofs",
+            "dir" : "/media",
+            "options" : "[nodevices]",
+            "special" : "/tank/media"
+         }
+      ],
+      "limitpriv" : "default",
+      "hostid" : "",
+      "net" : [
+         {
+            "physical" : "vnic0",
+            "ips" : [
+               "10.10.5.11/24"
+            ],
+            "gateway" : "10.10.5.1",
+            "over" : "igb0",
+            "primary" : "true"
+         }
+      ],
+      "scheduling-class" : "",
+      "resolvers" : [
+         "10.10.5.3"
+      ],
+      "zonename" : "plex",
+      "brand" : "lx"
+   },
+   "elk" : {
+      "resolvers" : [
+         "10.10.5.3"
+      ],
+      "zonename" : "elk",
+      "scheduling-class" : "",
+      "brand" : "lx",
+      "pool" : "",
+      "autoboot" : "false",
+      "ip-type" : "exclusive",
+      "limitpriv" : "default",
+      "net" : [
+         {
+            "over" : "igb0",
+            "primary" : "true",
+            "gateway" : "10.10.5.1",
+            "ips" : [
+               "10.10.5.16/24"
+            ],
+            "physical" : "vnic4"
+         }
+      ],
+      "hostid" : "",
+      "kernel-version" : "4.3.0",
+      "fs-allowed" : "",
+      "bootargs" : "",
+      "zonepath" : "/rpool/zones/elk",
+      "dns-domain" : "adams.network"
+   }
+}
